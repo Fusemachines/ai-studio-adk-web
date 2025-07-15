@@ -52,8 +52,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/bhupin33/adk-ui/",
-              "deployUrl": "/bhupin33/adk-ui/"
+              "baseHref": "http://localhost/bhuphin3333/adk-ui/",
+              "deployUrl": "http://localhost/bhuphin3333/adk-ui/"
             },
             "development": {
               "optimization": false,
