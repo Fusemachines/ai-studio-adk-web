@@ -15,15 +15,20 @@
  * limitations under the License.
  */
 
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {AppComponent} from './app.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
-    component: AppComponent,
-  }
+    path: "auth",
+    loadChildren: () =>
+      import("./modules/auth/auth.module").then((m) => m.AuthModule),
+  },
+  {
+    path: "",
+    loadChildren: () =>
+      import("./modules/layout/layout.module").then((m) => m.LayoutModule),
+  },
 ];
 
 @NgModule({
